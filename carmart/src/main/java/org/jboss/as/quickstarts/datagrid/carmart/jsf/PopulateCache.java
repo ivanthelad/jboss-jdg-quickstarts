@@ -60,19 +60,19 @@ public class PopulateCache implements SystemEventListener {
         List<String> carNumbers = new ArrayList<String>();
 
         try {
-            Car c = new Car("Ford Focus", 1.6, CarType.COMBI, "white", "FML 23-25", Country.CZECH_REPUBLIC);
+            Car c = new Car("Ford Focus", 1.6, CarType.COMBI, "white", "FML23-25", Country.CZECH_REPUBLIC);
             carNumbers.add(c.getNumberPlate());
             cars.put(CarManager.encode(c.getNumberPlate()), c);
-            c = new Car("BMW X3", 2.0, CarType.SEDAN, "gray", "1P3 2632", Country.CZECH_REPUBLIC);
+            c = new Car("BMW X3", 2.0, CarType.SEDAN, "gray", "1P32632", Country.CZECH_REPUBLIC);
             carNumbers.add(c.getNumberPlate());
             cars.put(CarManager.encode(c.getNumberPlate()), c);
-            c = new Car("Ford Mondeo", 2.2, CarType.COMBI, "blue", "1B2 1111", Country.USA);
+            c = new Car("Ford Mondeo", 2.2, CarType.COMBI, "blue", "1B21111", Country.USA);
             carNumbers.add(c.getNumberPlate());
             cars.put(CarManager.encode(c.getNumberPlate()), c);
-            c = new Car("Mazda MX-5", 1.8, CarType.CABRIO, "red", "6T4 2526", Country.USA);
+            c = new Car("Mazda MX-5", 1.8, CarType.CABRIO, "red", "6T42526", Country.USA);
             carNumbers.add(c.getNumberPlate());
             cars.put(CarManager.encode(c.getNumberPlate()), c);
-            c = new Car("VW Golf", 1.6, CarType.HATCHBACK, "yellow", "2B2 4946", Country.GERMANY);
+            c = new Car("VW Golf", 1.6, CarType.HATCHBACK, "yellow", "2B24946", Country.GERMANY);
             carNumbers.add(c.getNumberPlate());
             cars.put(CarManager.encode(c.getNumberPlate()), c);
             // insert a list of cars' number plates
